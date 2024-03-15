@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Tube Project</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="navbar">
+    <nav>
+      <img src="Beige Elegant Calligraphy Monogram  Initials logo.png" alt="" class="logo"  height="300">
+      <a href="/">Home</a> 
+      <a href="/Collections/collectionOne.html" class="nav-Links">Collection One</a>
+      <a href="/Collections/collectionTwo.html"  class="nav-Links">Collection Two</a>
+      <a href="/Collections/collectionThree.html"  class="nav-Links">Collection Three</a>
+      <a href="/form.html"  class="nav-Links">New Video</a>
+      <a href="/registerForm.html"><button class="join">Login/Register</button></a>
+      <div class="dropdown">
+        <div class="dropdown-button">
+          <img src="down icon.png" alt="">
+        </div>
+        <div class="dropdown-content">
+          <a href="/Collections/collectionOne.html">Collection One</a>
+          <a href="/Collections/collectionTwo.html">Collection Two</a>
+          <a href="/Collections/collectionThree.html">Collection Three</a>
+          <a href="/form.html">Upload New Video</a>
+        </div>
+      </div>
+
+    </nav>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  
+    <h1>Add New Video</h1> 
+    <form 
+          autocomplete="on" 
+          action="/action_page.php"
+          target="_target"
+          method="post">
+      
+      <label for="videoTitle"><h2>Video Title</h2></label>
+      <input id="videoTitle" 
+             name="videoTitle" 
+             type="text"
+             size="35"
+             placeholder="Input value"
+             required
+             >
+             <br><br>
+      
+             <label for="message"><h2>Description</h2></label>
+             <textarea id="message" name="message" rows="8" cols="25">
+        
+             </textarea>
+
+             <label for="types"><h2>Video</h2></label>
+             <input type="file">
+
+      
+     
+      <br><br>
+      
+      
+      
+      <label for="setting"></label>
+      <input name="setting" id ="public" type="radio" value="public">
+      <label for="public">Public</label>
+      
+      <input name="setting" id="private" type="radio" value="private">
+      <label for="private">Private</label>
+      
+      <br>
+      
+      
+      
+    <br>
+
+   <label for="chooseCollection"></label>
+      <select id="chooseCollection" name="chooseCollection">
+        
+        <option value="choose">Choose Collection</option>
+        <option value="collectionOne">Collection 1</option>
+        <option value="collectionTwo">Collection 2</option>
+        <option value="collectionThree">Collection 3</option>
+        
+      </select>
+      
+      
+      
+      
+      <br><br><br>
+      <button type="submit" >Upload Video</button>
+      
+      
+    </form>
+
+    <img src="https://media1.giphy.com/media/l3J4H4zp2nAdKZFebK/giphy.gif" alt="" class="gif"></body>
+  <hr>
+    <footer>&copy Copyright 2024</footer>
+  </html>
